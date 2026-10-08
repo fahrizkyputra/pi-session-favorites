@@ -1,5 +1,5 @@
 {
-  "name": "pi-session-favorites",
+  "name": "@fahrizkyputra/pi-session-favorites",
   "version": "0.1.0",
   "description": "Mark Pi sessions as favorites (★ in the session name) so /resume shows which ones to continue later.",
   "keywords": [

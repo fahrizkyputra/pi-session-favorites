@@ -16,7 +16,7 @@ A favorite is a session whose display name starts with `★ `. That is the only 
 ## Install
 
 ```bash
-pi install npm:pi-session-favorites
+pi install npm:@fahrizkyputra/pi-session-favorites
 ```
 
 ## Usage
