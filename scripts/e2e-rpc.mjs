@@ -17,7 +17,11 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const TIMEOUT_MS = 90_000;
-const extensionPath = resolve(dirname(fileURLToPath(import.meta.url)), "..", "extensions", "session-favorites.ts");
+// Point this at the published package to verify the shipped artifact:
+//   PI_FAVORITES_EXTENSION=npm:pi-session-favorites npm run test:e2e
+const extensionPath =
+	process.env.PI_FAVORITES_EXTENSION ??
+	resolve(dirname(fileURLToPath(import.meta.url)), "..", "extensions", "session-favorites.ts");
 const PID = "e2e0001";
 const TITLE = "e2e fixture message";
 
